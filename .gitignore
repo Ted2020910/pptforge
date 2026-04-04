@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+src/bld/
+
+# Generated PPTX files
+*.pptx
+!examples/动画示例.pptx
+!examples/视频背景.pptx
+
+# OS files
+.DS_Store
+*.icloud
+.icloud
+
+# IDE & cache
+.vite/
+.claude/
+
+# Debug
+npm-debug.log
+
+# Legacy
+bower_components/
+demo/
+.docusaurus/

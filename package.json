@@ -1,0 +1,73 @@
+{
+	"name": "pptforge",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "PPTForge - Enhanced PowerPoint generation engine with animation, video background & LaTeX formula support",
+	"license": "MIT",
+	"exports": {
+		"types": "./types/index.d.ts",
+		"import": "./dist/pptxgen.es.js",
+		"require": "./dist/pptxgen.cjs.js"
+	},
+	"main": "dist/pptxgen.cjs.js",
+	"module": "dist/pptxgen.es.js",
+	"files": [
+		"dist",
+		"types"
+	],
+	"types": "types",
+	"scripts": {
+		"build": "rollup -c --bundleConfigAsCjs",
+		"watch": "rollup -cw"
+	},
+	"browser": {
+		"express": false,
+		"fs": false,
+		"https": false,
+		"image-size": false,
+		"node:fs": false,
+		"node:https": false,
+		"os": false,
+		"path": false
+	},
+	"dependencies": {
+		"@types/node": "^22.8.1",
+		"@xmldom/xmldom": "^0.8.10",
+		"adm-zip": "^0.5.16",
+		"https": "^1.0.0",
+		"image-size": "^1.2.1",
+		"jszip": "^3.10.1",
+		"katex": "^0.16.9"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.25.1",
+		"@rollup/plugin-commonjs": "^28.0.1",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@stylistic/eslint-plugin": "^4.2.0",
+		"@typescript-eslint/eslint-plugin": "^8.31.0",
+		"@typescript-eslint/parser": "^8.31.0",
+		"eslint": "^9.25.1",
+		"rollup": "^4.24.2",
+		"rollup-plugin-typescript2": "^0.36.0",
+		"tslib": "^2.8.0",
+		"typescript": "^5.6.3",
+		"typescript-eslint": "^8.31.0"
+	},
+	"keywords": [
+		"pptforge",
+		"powerpoint",
+		"pptx",
+		"animation",
+		"video-background",
+		"latex-formula",
+		"slide-generator",
+		"typescript-powerpoint"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ted2020910/Agent2PPT.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Ted2020910/Agent2PPT/issues"
+	}
+}
